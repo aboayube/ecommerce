@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <script src="https://use.fontawesome.com/44622af4e3.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">home</a></li>
+                <li><a href="product.html">products</a></li>
+                <li><a href="productdetials.html">product detials</a></li>
+                <li><a href="card.html">cart</a></li>
+                <li><a href="acount.html">account</a></li>
+            </ul>
+        </nav>
+        <img src="img/cart.png" alt="" width="30px" height="30px">
+        <img src="img/menu.png" alt="" class="menu-icon" onclick="menuToggle()">
+    </div>
+</div>
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/image1.png" alt="" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">login</span>
+                        <span onclick="register()">register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form action="" id="login">
+                        <input type="text" placeholder="username">
+                       <input type="password" placeholder="password">
+                       <button class="btn">login</button>
+                       <a href="">Forgot Password</a>
+                    </form>
+                    <form action="" id="register">
+                        <input type="text" placeholder="username">
+                        <input type="email" placeholder="email">
+                       <input type="password" placeholder="password">
+                       <button class="btn">register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem perspiciatis, impedit nemo esse fugiat at voluptatibus? Sequi ipsum pariatur nulla possimus repellat iusto dignissimos id! Ipsam non corporis alias!</p>
+                       <div class="app-logo">
+                        <img src="img/play-store.png" alt="">
+                           <img src="img/app-store.png" alt="">
+                       </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <img src="img/logo-white.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem perspiciatis, impedit nemo esse fugiat at voluptatibus? Sequi ipsum pariatur nulla possimus repellat iusto dignissimos id! Ipsam non corporis alias!</p>
+                        </div>                 
+                           <div class="footer-col-3">
+                            <h3>useful links</h3>
+<ul>
+    <li>lala</li>
+    <li>lala</li>
+    <li>lala</li>
+    <li>lala</li>
+</ul>
+                        </div>              
+                        <div class="footer-col-4">
+                         <h3>contact with us</h3>
+<ul>
+ <li>facebook</li>
+ <li>facebook</li>
+ <li>facebook</li>
+ <li>facebook</li>
+</ul>
+                     </div>
+                    </div>
+                    <hr>
+                    <p class="copyright">make by wajeeh ayube shik al eid</p>
+                </div>
+            </div>
+            
+            <script>
+                var menuItem=document.getElementById("MenuItems");
+                menuItem.style.maxHeight="0px";
+                function menuToggle(){
+                    if(menuItem.style.maxHeight=="0px"){
+                        menuItem.style.maxHeight="200px";
+                    }else{
+                menuItem.style.maxHeight="0px";
+
+                    }
+                }
+
+          var lo=document.getElementById('login');
+          var re=document.getElementById('register');
+          var ind=document.getElementById('Indicator');
+        function register  (){
+            re.style.transform="translateX(0px)";
+            lo.style.transform="translateX(0px)";
+            ind.style.transform="translateX(100px)";
+        }
+        function login(){
+            re.style.transform="translateX(300px)";
+            lo.style.transform="translateX(300px)";
+            ind.style.transform="translateX(0px)";
+
+        }
+            </script>
+</body>
+</html>
